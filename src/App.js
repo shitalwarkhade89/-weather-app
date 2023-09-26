@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import './App.css'
+import clouds from './clouds.png';
 
 export default function App() {
     const [weatherData, setWeatherData] = useState({});
@@ -42,16 +43,21 @@ export default function App() {
                 }} className="searchbar" />
                 <div className="city">
                    
-                <h2 className="city-1">City:{weatherData?.name}</h2>
+                <h2 className="city-1">{weatherData?.name}</h2>
+                </div>
+                <div className="cloud-img">
+                <img src= {clouds} className="img"/>
                 </div>
                 
                
                     <p className="temp">Temperature: {(weatherData?.main?.temp - 273).toFixed(2)} °C</p>
-
-                    <p className="des"> Description:{weatherDescription}</p>
+                    
                     <p className="visibility">
                         Visibility :{weatherData?.visibility} meters
                     </p>
+
+                    <p className="des"> Description:{weatherDescription}</p>
+                  
 
         
 
