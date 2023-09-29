@@ -3,53 +3,84 @@
     padding: 0;
 
 }
+body{
+   background: url("https://img.freepik.com/premium-photo/blue-sky-white-clouds-vertical-background_483040-152.jpg?w=360");
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+    padding: 0;
+   
+}
 .main-cont{
-    background-color: rgb(173, 173, 244);
-height: 500px;
-width: 390px;
-display: block;
-margin: 10px auto;
-border-radius: 10px;
-padding: 10px;
+  margin-top: 50px;
+height: 100vh;
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
 
+
+}
+.div1-container{
+    /* border: 1px solid black; */  
+    margin: 20px;
+   
 }
 .searchbar{
     border: none;
-    font-size: 25px;
-    display: block;
-    margin: 10px auto;
+    border-radius: 10px;
+    font-size: 20px;
     margin-top: 50px;
-    width: 250px;
-    text-align: center;
-    }
+   width: 500px;
+    text-align: start;
+    padding: 10px;
+}
+ 
 .heading{
-    font-size: 35px;
+    font-size: 40px;
     font-family: sans-serif;
-    text-align: center;
+    text-align:center;
     margin: 10px;
     margin-top: 20px;
+
 }
 .temp{
     font-size: 25px;
     text-align: center;
 }
 .city-1{
-    font-size: 25px;
+    font-size: 35px;
     text-align: center;
-    margin: 15px;
+    margin-top: 30px;
+    font-family: sans-serif;
 }
-.des{
-    font-size: 20px;
-    text-align: center;
-    margin-top: 20px;
-}
-.visibility{
-    font-size: 20px;
-    text-align: center;
-    margin: 30px;
 
-}
 .img{
     display: block;
     margin: 10px auto;
+    height: 150px
+}
+.card-container{
+
+width: 600px;
+height: 500px;
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+
+}
+.card{
+    height: 100px;
+    width: 100px;
+    margin-top: 50px;
+    padding: 30px;
+    border-radius: 20px;  
+    background-color: rgba(67, 68, 70, 0.264);
+}
+p{
+    font-weight: bold;
+}
+span{
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
 }
